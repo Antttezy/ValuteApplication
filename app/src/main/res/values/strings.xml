@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">ValuteApplication</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="valutesXml">
+        <Data><![CDATA[
+            <Valute>
+                <NumCode>036</NumCode>
+                <CharCode>AUD</CharCode>
+                <Nominal>1</Nominal>
+                <Name>Австралийский доллар</Name>
+                <Value>16.0102</Value>
+            </Valute>
+    <Valute>
+        <NumCode>826</NumCode>
+        <CharCode>GBP</CharCode>
+        <Nominal>1</Nominal>
+        <Name>Фунт стерлингов Соединенного королевства</Name>
+        <Value>43.8254</Value>
+    </Valute>
+    <Valute>
+        <NumCode>974</NumCode>
+        <CharCode>BYR</CharCode>
+        <Nominal>1000</Nominal>
+        <Name>Белорусских рублей</Name>
+        <Value>18.4290</Value>
+    </Valute>
+    <Valute>
+        <NumCode>208</NumCode>
+        <CharCode>DKK</CharCode>
+        <Nominal>10</Nominal>
+        <Name>Датских крон</Name>
+        <Value>36.1010</Value>
+    </Valute>
+    <Valute>
+        <NumCode>840</NumCode>
+        <CharCode>USD</CharCode>
+        <Nominal>1</Nominal>
+        <Name>Доллар США</Name>
+        <Value>30.9436</Value>
+    </Valute>
+    <Valute>
+        <NumCode>978</NumCode>
+        <CharCode>EUR</CharCode>
+        <Nominal>1</Nominal>
+        <Name>Евро</Name>
+        <Value>26.8343</Value>
+    </Valute>
+    <Valute>
+        <NumCode>352</NumCode>
+        <CharCode>ISK</CharCode>
+        <Nominal>100</Nominal>
+        <Name>Исландских крон</Name>
+        <Value>30.7958</Value>
+    </Valute>
+    <Valute>
+        <NumCode>398</NumCode>
+        <CharCode>KZT</CharCode>
+        <Nominal>100</Nominal>
+        <Name>Казахстанских тенге</Name>
+        <Value>20.3393</Value>
+    </Valute>
+    <Valute>
+        <NumCode>124</NumCode>
+        <CharCode>CAD</CharCode>
+        <Nominal>1</Nominal>
+        <Name>Канадский доллар</Name>
+        <Value>19.3240</Value>
+    </Valute>
+    <Valute>
+        <NumCode>578</NumCode>
+        <CharCode>NOK</CharCode>
+        <Nominal>10</Nominal>
+        <Name>Норвежских крон</Name>
+        <Value>34.7853</Value>
+    </Valute>
+    <Valute>
+        <NumCode>960</NumCode>
+        <CharCode>XDR</CharCode>
+        <Nominal>1</Nominal>
+        <Name>СДР (специальные права заимствования)</Name>
+        <Value>38.4205</Value>
+    </Valute>
+    <Valute>
+        <NumCode>702</NumCode>
+        <CharCode>SGD</CharCode>
+        <Nominal>1</Nominal>
+        <Name>Сингапурский доллар</Name>
+        <Value>16.8878</Value>
+    </Valute>
+    <Valute>
+        <NumCode>792</NumCode>
+        <CharCode>TRL</CharCode>
+        <Nominal>1000000</Nominal>
+        <Name>Турецких лир</Name>
+        <Value>22.2616</Value>
+    </Valute>
+    <Valute>
+        <NumCode>980</NumCode>
+        <CharCode>UAH</CharCode>
+        <Nominal>10</Nominal>
+        <Name>Украинских гривен</Name>
+        <Value>58.1090</Value>
+    </Valute>
+    <Valute>
+        <NumCode>752</NumCode>
+        <CharCode>SEK</CharCode>
+        <Nominal>10</Nominal>
+        <Name>Шведских крон</Name>
+        <Value>29.5924</Value>
+    </Valute>
+    <Valute>
+        <NumCode>756</NumCode>
+        <CharCode>CHF</CharCode>
+        <Nominal>1</Nominal>
+        <Name>Швейцарский франк</Name>
+        <Value>18.1861</Value>
+    </Valute>
+    <Valute>
+        <NumCode>392</NumCode>
+        <CharCode>JPY</CharCode>
+        <Nominal>100</Nominal>
+        <Name>Японских иен</Name>
+        <Value>23.1527</Value>
+    </Valute>
+        ]]></Data>
+    </string>
+</resources>
