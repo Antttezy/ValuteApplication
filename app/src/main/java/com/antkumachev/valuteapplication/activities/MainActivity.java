@@ -5,7 +5,7 @@ import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.content.res.ResourcesCompat;
 
 import com.antkumachev.valuteapplication.R;
 import com.antkumachev.valuteapplication.adapters.ValuteAdapter;
@@ -16,9 +16,9 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.StringReader;
+import java.text.MessageFormat;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
                         switch (name) {
                             case "Valute":
                                 valute = new Valute();
-                                valute.setFlag(getDrawable(R.mipmap.ic_launcher));
                                 pullType = PullType.None;
                                 break;
                             case "CharCode":
@@ -75,7 +74,17 @@ public class MainActivity extends AppCompatActivity {
                     case(XmlPullParser.TEXT):
                         switch (pullType) {
                             case Code:
-                                valute.setCode(xpp.getText());
+                                String code = xpp.getText();
+                                valute.setCode(code);
+
+                                try {
+                                    String resCode = MessageFormat.format("{0}:drawable/{1}", getPackageName(), code.toLowerCase(Locale.ROOT));
+                                    int flagId = getResources().getIdentifier(resCode, null, null);
+
+                                    valute.setFlag(ResourcesCompat.getDrawable(getResources(),flagId, null));
+                                } catch (Throwable ignored) {
+
+                                }
                                 pullType = PullType.None;
                                 break;
                             case Name:
@@ -105,8 +114,8 @@ public class MainActivity extends AppCompatActivity {
                 eventType = xpp.next();
             }
 
-        } catch (Throwable t) {
-            int a = 0;
+        } catch (Throwable ignored) {
+
         }
 
         ValuteAdapter va = new ValuteAdapter(valutes, this);
